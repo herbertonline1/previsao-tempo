@@ -39,6 +39,14 @@ function colocarDadosNaTela(dados) {
         document.querySelector(".body").style.backgroundRepeat = "no-repeat"
         document.querySelector(".body").style.backgroundSize = "cover"
 
+    } else if (dados.weather[0].description == "névoa") {
+        document.querySelector(".body").style.backgroundImage = "url('./nevoa.jpg')"
+
+
+        document.querySelector(".body").style.backgroundPosition = "center"
+        document.querySelector(".body").style.backgroundRepeat = "no-repeat"
+        document.querySelector(".body").style.backgroundSize = "cover"
+
     }
 }
 
